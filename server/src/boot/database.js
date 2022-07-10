@@ -5,7 +5,7 @@ let startConnection;
 switch(connection){
 
     case SQL:
-        console.log("Aca conexión con secualize");
+        startConnection = require("../config/sql/connection");
         break;
     case MONGODB:
         startConnection = require("../config/mongo/connection");
